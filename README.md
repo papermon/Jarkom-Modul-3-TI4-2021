@@ -57,6 +57,19 @@ OPTIONS=""
 - Client mendapatkan DNS dari EniesLobby dan client dapat terhubung dengan internet melalui DNS tersebut.
 - Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 selama 6 menit sedangkan pada client yang melalui Switch3 selama 12 menit. Dengan waktu maksimal yang dialokasikan untuk peminjaman alamat IP selama 120 menit.
 
+Pertama kita perlu melakukan konfigurasi pada node client untuk memiliki konfigurasi DHCP
+Kemudian lakukan edit file konfigurasi pada DHCP server di `/etc/dhcp/dhcpd.conf`
+```
+subnet 'NID' netmask 'Netmask' {
+    range 'IP_Awal' 'IP_Akhir';
+    option routers 'iP_Gateway';
+    option broadcast-address 'IP_Broadcast';
+    option domain-name-servers 'DNS_yang_diinginkan';
+    default-lease-time 'Waktu';
+    max-lease-time 'Waktu';
+}
+```
+Diubah menjadi sesuai kebutuhan soal seperti contoh dibawah
 ```
 #switch1
 subnet 192.213.1.0 netmask 255.255.255.0 {
