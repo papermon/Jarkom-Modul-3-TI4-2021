@@ -28,6 +28,15 @@ Kemudian untuk mengubah water7 sebagai proxy server maka perlu dilakukan
 apt-get update
 apt-get install squid -y
 ```
+
+*Soal 2*
+
+Lalu, Untuk Foosha dapat menjadi DHCP Relay kita perlu meng install isc-dhcp-relay
+```
+apt-get update
+apt-get install isc-dhcp-relay -y
+```
+Kemudian perlu kita lakukan konfigurasi pada `/etc/default/isc-dhcp-relay`
 ```
 # What servers should the DHCP relay forward requests to?
 SERVERS="192.213.2.4"
@@ -38,7 +47,7 @@ INTERFACES="eth1 eth3 eth2"
 # Additional options that are passed to the DHCP relay daemon?
 OPTIONS=""
 ```
-lalu edit /etc/default/isc-dhcp-relay menjadi kodingan di atas
+
 ## **Soal 3 - 6**
 
 **Luffy dan Zoro menyusun peta tersebut dengan hati-hati dan teliti. Ada beberapa kriteria yang ingin dibuat oleh Luffy dan Zoro, yaitu:**
