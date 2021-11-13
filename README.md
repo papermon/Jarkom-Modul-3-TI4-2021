@@ -13,6 +13,21 @@
 
 ![image](https://user-images.githubusercontent.com/73151866/141642244-dcf45bcf-8c64-4757-8768-0dd3d8a47e2d.png)
 
+Pertama, Untuk mengubah `Enieslobby` sebagai DNS sever kita pperlu untuk menginstall bind9
+```
+apt-get update
+apt-get install bind9 -y
+```
+Kedua, Untuk mengubah `Jipangu` sebagai DHCP server perlu terlebih dari meng-install isc-dhcp-server
+```
+apt-get update
+apt-get install isc-dhcp-server -y
+```
+Kemudian untuk mengubah water7 sebagai proxy server maka perlu dilakukan
+```
+apt-get update
+apt-get install squid -y
+```
 ```
 # What servers should the DHCP relay forward requests to?
 SERVERS="192.213.2.4"
