@@ -160,7 +160,7 @@ delay_parameters 1 1250/3200
 delay_access 1 allow multimedia bar
 delay_access 1 deny ALL
 ```
-delay_parameters 1 1250/3200 merupakan konfigurasi untuk membatasi kecepatan saat mendownload. kenapa 1250? karena menggunakan bit bukan byte sehingga 1250 byte setara dengan 10000 bit.  
+delay_parameters 1 1250/3200 merupakan konfigurasi untuk membatasi kecepatan saat mendownload. kenapa 1250? karena menggunakan byte bukan bit sehingga 1250 byte setara dengan 10000 bit atau 10kb.  
 
 ## **Extra**
 tambahkan http_access deny ALL untuk menutup file pada /etc/squid/squid.conf
