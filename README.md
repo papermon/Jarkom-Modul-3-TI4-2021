@@ -13,6 +13,17 @@
 
 ![image](https://user-images.githubusercontent.com/73151866/141642244-dcf45bcf-8c64-4757-8768-0dd3d8a47e2d.png)
 
+```
+# What servers should the DHCP relay forward requests to?
+SERVERS="192.213.2.4"
+
+# On what interfaces should the DHCP relay (dhrelay) serve DHCP requests?
+INTERFACES="eth1 eth3 eth2"
+
+# Additional options that are passed to the DHCP relay daemon?
+OPTIONS=""
+```
+lalu edit /etc/default/isc-dhcp-relay menjadi kodingan di atas
 ## **Soal 3 - 6**
 
 **Luffy dan Zoro menyusun peta tersebut dengan hati-hati dan teliti. Ada beberapa kriteria yang ingin dibuat oleh Luffy dan Zoro, yaitu:**
