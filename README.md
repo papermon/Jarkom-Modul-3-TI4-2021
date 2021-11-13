@@ -13,7 +13,7 @@
 
 ![image](https://user-images.githubusercontent.com/73151866/141642244-dcf45bcf-8c64-4757-8768-0dd3d8a47e2d.png)
 
-Pertama, Untuk mengubah `Enieslobby` sebagai DNS sever kita pperlu untuk menginstall bind9
+Pertama, Untuk mengubah `Enieslobby` sebagai DNS sever kita perlu untuk menginstall bind9
 ```
 apt-get update
 apt-get install bind9 -y
