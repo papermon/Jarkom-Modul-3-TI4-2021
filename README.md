@@ -23,7 +23,7 @@ Kedua, Untuk mengubah `Jipangu` sebagai DHCP server perlu terlebih dari meng-ins
 apt-get update
 apt-get install isc-dhcp-server -y
 ```
-Kemudian untuk mengubah water7 sebagai proxy server maka perlu dilakukan
+Kemudian untuk mengubah `water7` sebagai proxy server maka perlu dilakukan
 ```
 apt-get update
 apt-get install squid -y
@@ -31,7 +31,7 @@ apt-get install squid -y
 
 *Soal 2*
 
-Lalu, Untuk Foosha dapat menjadi DHCP Relay kita perlu meng install isc-dhcp-relay
+Lalu, Untuk `Foosha` dapat menjadi DHCP Relay kita perlu meng install isc-dhcp-relay
 ```
 apt-get update
 apt-get install isc-dhcp-relay -y
